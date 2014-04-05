@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- font sizes -->
+    <dimen name="drawer_item">20sp</dimen>
+    <dimen name="list_item">10sp</dimen>
+    <dimen name="size_by_gender_text">14sp</dimen>
+    <dimen name="size_by_gender_footer">8sp</dimen>
+    <dimen name="help_title">14sp</dimen>
+    <dimen name="help_message">8sp</dimen>
+    <dimen name="help_note">8sp</dimen>
+
+    <!-- margin and padding -->
+    <dimen name="drawer_item_padding">10dp</dimen>
+
+</resources>

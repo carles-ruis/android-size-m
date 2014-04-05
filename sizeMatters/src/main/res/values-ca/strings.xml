@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="app_name">Size Matters</string>
+    <string name="loading">Carregant ...</string>
+
+    <!-- Menu options -->
+    <string name="menu_shoes">Calçat</string>
+    <string name="menu_shirts">Samarretes</string>
+    <string name="menu_dresses">Roba dona</string>
+    <string name="menu_jackets">Roba home</string>
+    <string name="menu_trousers">Pantalons</string>
+    <string name="menu_by_gender">Mesures home/dona</string>
+
+    <!-- Screen titles -->
+    <string name="title_shoes">Calçat</string>
+    <string name="title_shirts">Samarretes</string>
+    <string name="title_dresses">Roba dona</string>
+    <string name="title_jackets">Roba home</string>
+    <string name="title_trousers">Pantalons</string>
+    <string name="title_by_gender">Mesures</string>
+    <string name="title_settings">Preferències</string>
+
+    <!-- Action bar items -->
+    <string name="action_spinner">Talles</string>
+    <string name="action_help">Ajuda</string>
+    <string name="action_settings">Preferències</string>
+
+    <!-- Tab titles -->
+    <string name="tab_men">Home</string>
+    <string name="tab_women">Dona</string>
+
+    <!-- Settings options -->
+    <string name="settings_units">Unitats de mesura</string>
+    <string name="settings_units_cms">Centímetres</string>
+    <string name="settings_units_inches">Polzades</string>
+    <string name="settings_show_sizes_uk">Veure talles britàniques</string>
+    <string name="settings_show_sizes_jp">Veure talles japoneses</string>
+
+    <!-- Help texts -->
+    <string name="help_abbreviatures">EU\nUS\nUK\nJP</string>
+    <string name="help_countries">Europa\nEEUU i Canadà\nRegne Unit\nJapó</string>
+    <string name="help_shoes">Equivalències de talles de calçat</string>
+    <string name="help_shirts">Equivalències de talles de samarretes i bruses</string>
+    <string name="help_dresses">Equivalències de talles de roba de dona: vestits, jaquetes, abrics</string>
+    <string name="help_jackets">Equivalències de talles de roba d\'home: jaquetes, tratges, abrics, jerseis</string>
+    <string name="help_trousers">Equivalències de talles de pantalons</string>
+    <string name="help_by_gender">Mesures en cms o polzades:\nHome: Mesures per coll, pit, màniga i cintura\nDona: Mesures per pit, cintura i cadera</string>
+    <string name="help_note">No hi ha un estàndar internacional de talles. Poden variar en funció de la marca</string>
+
+    <!-- WomenSizes and MenSizesFragment footer -->
+    <string name="footer_units_of_measure">*Mides en %1$s</string>
+
+    <!-- Accessibility -->
+    <string name="access_drawer_open">Obre menú</string>
+    <string name="access_drawer_close">Tanca menú</string>
+    <string name="access_img_women_body"></string>
+    <string name="access_img_men_body"></string>
+
+    <!-- Validation -->
+
+
+    <!-- Errors -->
+
+</resources>

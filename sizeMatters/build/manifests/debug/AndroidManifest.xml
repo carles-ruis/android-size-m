@@ -1,0 +1,20 @@
+<!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.carles.sizematters">
+
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19"/>
+
+    <!-- Theme generated with jgilfelt.github.io/android-actionbarstylegenerator/ . Applies to the action bar -->
+    <!-- Just copy the generated res folder to the root of the project, original files won't be affected -->
+    <!-- And of course change the android:theme value for the generated style -->
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.carles.sizematters.SizeMattersApp" android:theme="@style/Theme.Sm">
+        
+        <activity android:label="@string/app_name" android:name="com.carles.sizematters.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_settings" android:name="com.carles.sizematters.activity.SettingsActivity"/>
+    </application>
+
+</manifest>

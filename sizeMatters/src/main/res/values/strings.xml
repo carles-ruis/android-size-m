@@ -1,0 +1,82 @@
+<resources>
+
+    <string name="app_name">Size Matters</string>
+    <string name="loading">Loading ...</string>
+
+    <!-- Menu options -->
+    <string name="menu_shoes">Shoes</string>
+    <string name="menu_shirts">Shirts</string>
+    <string name="menu_dresses">Women\'s clothing</string>
+    <string name="menu_jackets">Men\'s clothing</string>
+    <string name="menu_trousers">Trousers</string>
+    <string name="menu_by_gender">Size standards</string>
+
+    <!-- Screen titles -->
+    <string name="title_shoes">Shoes</string>
+    <string name="title_shirts">Shirts</string>
+    <string name="title_dresses">Women clothing</string>
+    <string name="title_jackets">Men clothing</string>
+    <string name="title_trousers">Trousers</string>
+    <string name="title_by_gender">Standards</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Action bar items -->
+    <string name="action_spinner">Sizes</string>
+    <string name="action_help">Help</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Tab titles -->
+    <string name="tab_men">Men</string>
+    <string name="tab_women">Women</string>
+
+    <!-- Preferences keys -->
+    <string name="app_pref_last_screen_seen">app_pref_last_screen_seen</string>
+    <string name="app_pref_last_gender_seen">app_pref_last_gender_seen</string>
+    <string name="user_pref_show_size_uk">user_pref_show_size_uk</string>
+    <string name="user_pref_show_size_jp">user_pref_show_size_jp</string>
+    <string name="user_pref_units">user_pref_units</string>
+
+    <string-array name="user_pref_units_entries">
+        <item>@string/settings_units_cms</item>
+        <item>@string/settings_units_inches</item>
+    </string-array>
+
+    <!-- Settings options -->
+    <string name="settings_units">Unit of measure</string>
+
+    <string-array name="settings_units_entries">
+        <item>@string/settings_units_cms</item>
+        <item>@string/settings_units_inches</item>
+    </string-array>
+
+    <string name="settings_units_cms">Centimeters</string>
+    <string name="settings_units_inches">Inches</string>
+    <string name="settings_show_sizes_uk">Show british sizes</string>
+    <string name="settings_show_sizes_jp">Show japanese sizes</string>
+
+    <!-- Help texts -->
+    <string name="help_abbreviatures">EU\nUS\nUK\nJP</string>
+    <string name="help_countries">Europe\nUSA &amp; Canada\nJapan</string>
+    <string name="help_shoes">Size conversion for Men\'s &amp; Women\'s Shoes</string>
+    <string name="help_shirts">Size conversion for Shirts and Women\'s Blouses</string>
+    <string name="help_dresses">Size conversion for Women\'s Dresses, Jackets, Suits, Coats</string>
+    <string name="help_jackets">Size conversion for Men\'s Jackets, Suits, Coats, Sweaters</string>
+    <string name="help_trousers">Size conversion for Trousers</string>
+    <string name="help_by_gender">Women\'s &amp; Men\'s Size Standards in cms or inches:\nMen: Neck, chest, sleeve and waist measurements\nWomen: Bust, waist and hip measurements</string>
+    <string name="help_note">*Note that there is no real international standard for clothes sizing</string>
+
+    <!-- WomenSizes and MenSizesFragment footer -->
+    <string name="footer_units_of_measure">*Measurements in %1$s</string>
+
+    <!-- Accessibility -->
+    <string name="access_drawer_open">Open menu</string>
+    <string name="access_drawer_close">Close menu</string>
+    <string name="access_img_women_body"></string>
+    <string name="access_img_men_body"></string>
+
+    <!-- Validation -->
+
+
+    <!-- Errors -->
+
+</resources>

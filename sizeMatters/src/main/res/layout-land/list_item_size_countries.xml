@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/item_size"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/list_item"
+        android:textSize="@dimen/list_item" />
+
+    <TextView
+        android:id="@+id/item_size_eu"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/list_item"
+        android:textSize="@dimen/list_item" />
+
+    <TextView
+        android:id="@+id/item_size_us"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/list_item"
+        android:textSize="@dimen/list_item" />
+
+    <TextView
+        android:id="@+id/item_size_uk"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/list_item"
+        android:textSize="@dimen/list_item"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_size_jp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/list_item"
+        android:textSize="@dimen/list_item"
+        android:visibility="gone" />
+
+</LinearLayout>

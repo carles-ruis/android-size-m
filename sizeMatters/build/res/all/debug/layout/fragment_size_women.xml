@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background" >
+
+    <Spinner
+        android:id="@+id/spinner_sizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/body_image"
+        android:layout_toLeftOf="@+id/body_image" />
+
+    <FrameLayout
+        android:id="@+id/body_image"
+        android:layout_width="180dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/access_img_women_body"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_women_body" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/item_size_bust"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/size_by_gender_text"
+                android:textSize="@dimen/size_by_gender_text" />
+
+            <TextView
+                android:id="@+id/item_size_waist"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/size_by_gender_text"
+                android:textSize="@dimen/size_by_gender_text" />
+
+            <TextView
+                android:id="@+id/item_size_hip"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/size_by_gender_text"
+                android:textSize="@dimen/size_by_gender_text" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/footer_units_of_measure"
+        android:textColor="@color/size_by_gender_footer"
+        android:textSize="@dimen/size_by_gender_footer" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/res/layout/fragment_size_women.xml -->

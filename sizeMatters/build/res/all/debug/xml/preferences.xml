@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- add language preference ?? -->
+    <!-- <ListPreference -->
+
+    <CheckBoxPreference
+        android:key="pref_show_size_uk"
+        android:defaultValue="false"
+        android:title="@string/settings_show_sizes_uk" />
+    <CheckBoxPreference
+        android:key="pref_show_size_jp"
+        android:defaultValue="false"
+        android:title="@string/settings_show_sizes_jp" />
+
+    <ListPreference
+        android:key="pref_units"
+        android:defaultValue="@string/settings_units_cms"
+        android:dialogTitle="@string/settings_units"
+        android:entries="@array/settings_units_entries"
+        android:entryValues="@array/user_pref_units_entries"
+        android:title="@string/settings_units" />
+
+</PreferenceScreen><!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/res/xml/preferences.xml -->

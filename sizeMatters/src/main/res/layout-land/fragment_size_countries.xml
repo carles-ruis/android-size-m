@@ -1,0 +1,15 @@
+<!-- set height to match_parent to force the scrolling bar to appear at the bottom of the screen -->
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/horizontal_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/main_background"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</HorizontalScrollView>

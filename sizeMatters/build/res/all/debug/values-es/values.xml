@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/build/exploded-bundles/ComAndroidSupportAppcompatV71910.aar/res/values-es/values.xml -->
+    <eat-comment />
+
+    <string name="abc_action_bar_home_description" msgid="4600421777120114993">"Ir a la pantalla de inicio"</string>
+    <string name="abc_action_bar_up_description" msgid="1594238315039666878">"Desplazarse hacia arriba"</string>
+    <string name="abc_action_menu_overflow_description" msgid="3588849162933574182">"Más opciones"</string>
+    <string name="abc_action_mode_done" msgid="4076576682505996667">"Listo"</string>
+    <string name="abc_activity_chooser_view_see_all" msgid="7468859129482906941">"Ver todo"</string>
+    <string name="abc_activitychooserview_choose_application" msgid="2031811694353399454">"Seleccionar una aplicación"</string>
+    <string name="abc_searchview_description_clear" msgid="3691816814315814921">"Borrar consulta"</string>
+    <string name="abc_searchview_description_query" msgid="2550479030709304392">"Consulta"</string>
+    <string name="abc_searchview_description_search" msgid="8264924765203268293">"Buscar"</string>
+    <string name="abc_searchview_description_submit" msgid="8928215447528550784">"Enviar consulta"</string>
+    <string name="abc_searchview_description_voice" msgid="893419373245838918">"Búsqueda por voz"</string>
+    <string name="abc_shareactionprovider_share_with" msgid="3421042268587513524">"Compartir con"</string>
+    <string name="abc_shareactionprovider_share_with_application" msgid="7165123711973476752">"Compartir con %s"</string>
+    <!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/res/values-es/strings.xml -->
+    <eat-comment />
+
+    <string name="access_drawer_close">Cierra menú</string>
+    <string name="access_drawer_open">Abre menú</string>
+    <string name="access_img_men_body"></string>
+    <string name="access_img_women_body"></string>
+    <string name="action_help">Ayuda</string>
+    <string name="action_settings">Preferencias</string>
+    <string name="action_spinner">Tallas</string>
+    <string name="app_name">Size Matters</string>
+    <string name="footer_units_of_measure">*Medidas en %1$s</string>
+    <string name="help_abbreviatures">EU\nUS\nUK\nJP</string>
+    <string name="help_by_gender">Medidas en cms o pulgadas:\nHombre: Medidas de cuello, pecho, manga y cintura\nMujer: Medidas de pecho, cintura y cadera</string>
+    <string name="help_countries">Europa\nEEUU y Canadá\nReino Unido\nJapón</string>
+    <string name="help_dresses">Conversión de tallas de ropa de mujer: vestidos, chaquetas, abrigos</string>
+    <string name="help_jackets">Conversión de tallas de ropa de hombre: chaquetas, trajes, abrigos, jerseys</string>
+    <string name="help_note">No existe u n estándar internacional de tallas. Pueden variar en función de la marca</string>
+    <string name="help_shirts">Conversión de tallas de camisetas y blusas</string>
+    <string name="help_shoes">Conversión de tallas de calzado</string>
+    <string name="help_trousers">Conversión de tallas de pantalones</string>
+    <string name="loading">Cargando ...</string>
+    <string name="menu_by_gender">Medidas</string>
+    <string name="menu_dresses">Ropa mujer</string>
+    <string name="menu_jackets">Ropa hombre</string>
+    <string name="menu_shirts">Camisetas</string>
+    <string name="menu_shoes">Calzado</string>
+    <string name="menu_trousers">Pantalones</string>
+    <string name="settings_show_sizes_jp">Ver tallas japonesas</string>
+    <string name="settings_show_sizes_uk">Ver tallas británicas</string>
+    <string name="settings_units">Unidades de medida</string>
+    <string name="settings_units_cms">Centímetros</string>
+    <string name="settings_units_inches">Pulgadas</string>
+    <string name="tab_men">Hombre</string>
+    <string name="tab_women">Mujer</string>
+    <string name="title_by_gender">Medidas</string>
+    <string name="title_dresses">Ropa mujer</string>
+    <string name="title_jackets">Ropa hombre</string>
+    <string name="title_settings">Preferencias</string>
+    <string name="title_shirts">Camisetas</string>
+    <string name="title_shoes">Calzado</string>
+    <string name="title_trousers">Pantalones</string>
+
+</resources>
