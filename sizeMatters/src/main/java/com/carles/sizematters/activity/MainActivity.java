@@ -169,7 +169,9 @@ public class MainActivity extends BaseActivity {
                 break;
 
             case R.id.action_help:
-                this.showHelpDialog();
+                if (selectedOption != null) {
+                    this.showHelpDialog();
+                }
                 break;
 
             default: /*- fragment will handle the event */

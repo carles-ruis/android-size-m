@@ -14,8 +14,10 @@
     <color name="dark_green">#228822</color>
     <color name="almost_black">#111111</color>
     <color name="almost_white">#eeeeee</color>
-    <color name="lighter_grey">#dddddd</color>
-    <color name="light_grey">#cccccc</color>
+    <color name="lighter_grey">#e7e7e7</color>
+    <color name="light_grey">#d6d6d6</color>
+    <!--<color name="lighter_grey">#dddddd</color>-->
+    <!--<color name="light_grey">#cccccc</color>-->
     <color name="grey">#aaaaaa</color>
     <color name="dark_grey">#333333</color>
     <color name="blue">#1111bb</color>
@@ -27,8 +29,8 @@
     <!-- navigation drawer -->
     <color name="drawer_background">@color/green_translucent</color>
     <color name="drawer_menu_pressed">@color/dark_green</color>
-    <color name="drawer_menu_selected">@color/dark_green</color>
-    <color name="drawer_menu_nonselected">@color/green</color>
+    <color name="drawer_menu_activated">@color/dark_green</color>
+    <color name="drawer_menu_unactive">@color/green</color>
     <color name="drawer_divider">@color/dark_green</color>
     <color name="drawer_item">@color/lighter_green</color>
 
@@ -43,6 +45,7 @@
     <color name="list_divider">@color/grey</color>
     <color name="list_item">@color/almost_black</color>
     <color name="size_by_gender_text">@color/almost_black</color>
+    <color name="size_by_gender_textbox">@color/green</color>
     <color name="size_by_gender_footer">@color/almost_black</color>
 
     <!-- popup contents -->

@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/help_content"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -10,12 +10,13 @@
         android:background="@color/help_background"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="10dp" >
+        android:padding="@dimen/help_dialog_padding">
 
         <TextView
             android:id="@+id/help_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding"
             android:textColor="@color/help_title"
             android:textSize="@dimen/help_title" />
 
@@ -29,6 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:padding="@dimen/common_padding"
             android:textColor="@color/help_message"
             android:textSize="@dimen/help_message" />
 
@@ -37,35 +39,40 @@
             android:layout_height="2dp"
             android:background="@color/help_divider" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="10" >
+            android:padding="@dimen/common_padding">
+
+            <View
+                android:id="@+id/anchor"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true" />
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="5"
-                android:gravity="right"
+                android:layout_marginRight="@dimen/help_countries_offset"
+                android:layout_toLeftOf="@id/anchor"
                 android:text="@string/help_abbreviatures"
                 android:textColor="@color/help_message"
                 android:textSize="@dimen/help_message" />
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="5"
-                android:gravity="left"
+                android:layout_toRightOf="@id/anchor"
                 android:text="@string/help_countries"
                 android:textColor="@color/help_message"
                 android:textSize="@dimen/help_message" />
-        </LinearLayout>
+        </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:padding="@dimen/common_padding"
             android:text="@string/help_note"
             android:textColor="@color/help_note"
             android:textSize="@dimen/help_note" />

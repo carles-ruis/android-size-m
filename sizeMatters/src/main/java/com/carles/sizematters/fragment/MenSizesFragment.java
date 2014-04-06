@@ -1,10 +1,5 @@
 package com.carles.sizematters.fragment;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -24,11 +19,17 @@ import com.carles.sizematters.activity.MainActivity;
 import com.carles.sizematters.helper.FileHelper;
 import com.carles.sizematters.model.MenSizesConversion;
 
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class MenSizesFragment extends Fragment {
 
     protected Map<String, MenSizesConversion> sizes;
     protected int rawResourceId;
     protected int layoutResourceId;
+    private String unitsSelected;
 
     private View view;
 
@@ -46,7 +47,7 @@ public class MenSizesFragment extends Fragment {
 
         InputStream is = getResources().openRawResource(rawResourceId);
 
-        String unitsSelected = ((MainActivity) activity).getApp().getUnitsSelected();
+        unitsSelected = ((MainActivity) activity).getApp().getUnitsSelected();
         boolean showInInches = getString(R.string.settings_units_inches).equals(unitsSelected);
 
         sizes = FileHelper.readMenSizeConversionResource(is, showInInches);
@@ -73,8 +74,7 @@ public class MenSizesFragment extends Fragment {
 
         Spinner spinner = (Spinner) view.findViewById(R.id.spinner_sizes);
         List<String> sizeCodes = new ArrayList<String>(sizes.keySet());
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item,
-                sizeCodes);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, sizeCodes);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
@@ -92,6 +92,10 @@ public class MenSizesFragment extends Fragment {
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {}
         });
+
+        final TextView footer = (TextView) view.findViewById(R.id.item_footer);
+        footer.setText(getString(R.string.footer_units_of_measure, unitsSelected));
+
         return view;
     }
 

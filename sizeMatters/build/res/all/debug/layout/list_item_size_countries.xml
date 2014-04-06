@@ -3,6 +3,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="horizontal"
+    android:padding="@dimen/common_padding"
     android:weightSum="10" >
 
     <TextView

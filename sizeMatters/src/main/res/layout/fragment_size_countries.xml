@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_background"
     android:orientation="vertical" >
 
     <ListView
@@ -9,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@color/list_divider"
-        android:background="@drawable/main_background"
+        android:layout_marginLeft="@dimen/size_countries_divider_margin"
+        android:layout_marginRight="@dimen/size_countries_divider_margin"
+        android:layout_marginTop="@dimen/size_countries_top_margin"
         android:dividerHeight="1dp" />
 
 </LinearLayout>

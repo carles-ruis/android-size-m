@@ -1,9 +1,5 @@
 package com.carles.sizematters.fragment;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
-
 import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -21,6 +17,10 @@ import com.carles.sizematters.activity.MainActivity;
 import com.carles.sizematters.adapter.SizeCountriesAdapter;
 import com.carles.sizematters.helper.FileHelper;
 import com.carles.sizematters.model.SizeCountriesConversion;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 
 public abstract class BaseSizeCountriesFragment extends Fragment {
 
@@ -117,7 +117,13 @@ public abstract class BaseSizeCountriesFragment extends Fragment {
         View ret = new View(getActivity());
         LinearLayout.LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT, 1);
         ret.setLayoutParams(lp);
-        ret.setBackground(getResources().getDrawable(R.color.list_divider));
+
+        if (android.os.Build.VERSION.SDK_INT >= 16) {
+            ret.setBackground(getResources().getDrawable(R.color.list_divider));
+        } else {
+            ret.setBackgroundDrawable(getResources().getDrawable(R.color.list_divider));
+        }
+
         return ret;
     }
 
