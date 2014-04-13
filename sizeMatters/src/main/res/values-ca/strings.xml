@@ -45,7 +45,7 @@
     <string name="help_jackets">Equivalències de talles de roba d\'home: jaquetes, tratges, abrics, jerseis</string>
     <string name="help_trousers">Equivalències de talles de pantalons</string>
     <string name="help_by_gender">Mesures en cms o polzades:\nHome: Mesures per coll, pit, màniga i cintura\nDona: Mesures per pit, cintura i cadera</string>
-    <string name="help_note">No hi ha un estàndar internacional de talles. Poden variar en funció de la marca</string>
+    <string name="help_note">*No hi ha un estàndar internacional de talles. Poden variar en funció de la marca</string>
 
     <!-- WomenSizes and MenSizesFragment footer -->
     <string name="footer_units_of_measure">*Mides en %1$s</string>

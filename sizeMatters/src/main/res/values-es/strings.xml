@@ -45,7 +45,7 @@
     <string name="help_jackets">Conversión de tallas de ropa de hombre: chaquetas, trajes, abrigos, jerseys</string>
     <string name="help_trousers">Conversión de tallas de pantalones</string>
     <string name="help_by_gender">Medidas en cms o pulgadas:\nHombre: Medidas de cuello, pecho, manga y cintura\nMujer: Medidas de pecho, cintura y cadera</string>
-    <string name="help_note">No existe u n estándar internacional de tallas. Pueden variar en función de la marca</string>
+    <string name="help_note">*No existe un estándar internacional de tallas. Pueden variar en función de la marca</string>
 
     <!-- WomenSizes and MenSizesFragment footer -->
     <string name="footer_units_of_measure">*Medidas en %1$s</string>

@@ -12,7 +12,7 @@
 
     <!-- Theme generated with jgilfelt.github.io/android-actionbarstylegenerator/ . Applies to the action bar -->
     <!-- Just copy the generated res folder to the root of the project, original files won't be affected -->
-    <!-- And of course change the android:theme value for the generated style -->
+    <!-- And of course change the androi d:theme value for the generated style -->
     <application
         android:name="SizeMattersApp"
         android:allowBackup="true"

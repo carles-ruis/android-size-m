@@ -6,3 +6,5 @@
 
 # added files
 import-summary.txt
+*.apk
+*.ap_

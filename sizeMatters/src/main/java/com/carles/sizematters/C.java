@@ -3,7 +3,7 @@ package com.carles.sizematters;
 public class C {
 
     /*- Logging */
-    public static final boolean DEBUG = true;
+    public static final boolean DEBUG = false;
     public static final String LOG_TAG = "SizeMattersApp";
 
     /*- Preferences files */
