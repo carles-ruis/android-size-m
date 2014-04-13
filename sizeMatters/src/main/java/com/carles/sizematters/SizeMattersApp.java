@@ -40,9 +40,9 @@ public class SizeMattersApp extends Application {
         }
     }
 
-    private void forceCrashForBugsenseTesting() {
-        throw new RuntimeException("BUGSENSE ARE YOU THERE?");
-    }
+//    private void forceCrashForBugsenseTesting() {
+//        throw new RuntimeException("BUGSENSE ARE YOU THERE?");
+//    }
 
     public int getDrawerOptionSelected() {
         return prefs.getInt(C.APP_PREF_LAST_DRAWER_OPTION_SELECTED, C.PREF_NOT_EXISTS);

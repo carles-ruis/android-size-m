@@ -1,4 +1,8 @@
+# android studio default files
 .gradle
 /local.properties
 /.idea/workspace.xml
 .DS_Store
+
+# added files
+import-summary.txt
