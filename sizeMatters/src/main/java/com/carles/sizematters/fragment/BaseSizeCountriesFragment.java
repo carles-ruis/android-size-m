@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.bugsense.trace.BugSenseHandler;
+import com.carles.sizematters.C;
 import com.carles.sizematters.R;
 import com.carles.sizematters.activity.MainActivity;
 import com.carles.sizematters.adapter.SizeCountriesAdapter;
@@ -104,7 +106,7 @@ public abstract class BaseSizeCountriesFragment extends Fragment {
             sizes = FileHelper.readCountriesConversionResource(is);
             is.close();
         } catch (IOException e) {
-            // TODO report error
+            BugSenseHandler.sendExceptionMessage(C.OPEN_RESOURCE, String.valueOf(rawResourceId), e);
         }
     }
 

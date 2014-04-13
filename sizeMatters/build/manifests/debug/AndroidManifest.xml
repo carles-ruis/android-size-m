@@ -2,6 +2,9 @@
 
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19"/>
 
+    <!-- Bugsense needs internet permission -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <!-- Theme generated with jgilfelt.github.io/android-actionbarstylegenerator/ . Applies to the action bar -->
     <!-- Just copy the generated res folder to the root of the project, original files won't be affected -->
     <!-- And of course change the android:theme value for the generated style -->

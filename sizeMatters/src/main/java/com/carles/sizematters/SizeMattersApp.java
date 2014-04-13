@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.StrictMode;
 import android.preference.PreferenceManager;
 
+import com.bugsense.trace.BugSenseHandler;
 import com.carles.sizematters.util.Log;
 import com.carles.sizematters.util.PrefUtil;
 
@@ -23,8 +24,11 @@ public class SizeMattersApp extends Application {
 
         configStrictMode();
 
-        prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        BugSenseHandler.initAndStartSession(this, C.API_KEY);
+        BugSenseHandler.setUserIdentifier(C.COMMON_USER_ID);
+//        forceCrashForBugsenseTesting();
 
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
     }
 
     private void configStrictMode() {
@@ -34,6 +38,10 @@ public class SizeMattersApp extends Application {
         } else {
             Log.i(LOG_TAG, "Strict Mode off");
         }
+    }
+
+    private void forceCrashForBugsenseTesting() {
+        throw new RuntimeException("BUGSENSE ARE YOU THERE?");
     }
 
     public int getDrawerOptionSelected() {

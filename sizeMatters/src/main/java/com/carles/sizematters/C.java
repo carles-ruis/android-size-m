@@ -40,4 +40,9 @@ public class C {
 
     /*- Tags for identify fragments */
     public static final String TAG_HELP_DIALOG = "helpDialog";
+
+    /*- Bugsense */
+    public static final String API_KEY = "5dac9455";
+    public static final String COMMON_USER_ID = "0";
+    public static final String OPEN_RESOURCE = "open_raw_resource";
 }
