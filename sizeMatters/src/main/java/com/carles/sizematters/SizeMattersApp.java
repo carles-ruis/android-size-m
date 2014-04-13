@@ -56,25 +56,25 @@ public class SizeMattersApp extends Application {
         return prefs.getBoolean(C.USER_PREF_SHOW_SIZES_UK, false);
     }
 
-    public void setShowSizesUk(Boolean showSizesUk) {
-        putPreference(C.USER_PREF_SHOW_SIZES_UK, showSizesUk);
-    }
+//    public void setShowSizesUk(Boolean showSizesUk) {
+//        putPreference(C.USER_PREF_SHOW_SIZES_UK, showSizesUk);
+//    }
 
     public Boolean getShowSizesJp() {
         return prefs.getBoolean(C.USER_PREF_SHOW_SIZES_JP, false);
     }
 
-    public void setShowSizesJp(Boolean showSizesJp) {
-        putPreference(C.USER_PREF_SHOW_SIZES_JP, showSizesJp);
-    }
+//    public void setShowSizesJp(Boolean showSizesJp) {
+//        putPreference(C.USER_PREF_SHOW_SIZES_JP, showSizesJp);
+//    }
 
-    public String getUnitsSelected() {
-        return prefs.getString(C.USER_PREF_UNITS, getString(R.string.settings_units_cms));
-    }
+//    public String getUnitsSelected() {
+//        return prefs.getString(C.USER_PREF_UNITS, getString(R.string.settings_units_cms));
+//    }
 
-    public void setUnitsSelected(String unitsSelected) {
-        putPreference(C.USER_PREF_UNITS, unitsSelected);
-    }
+//    public void setUnitsSelected(String unitsSelected) {
+//        putPreference(C.USER_PREF_UNITS, unitsSelected);
+//    }
 
     private void putPreference(String key, Object value) {
         final SharedPreferences.Editor editor = prefs.edit();

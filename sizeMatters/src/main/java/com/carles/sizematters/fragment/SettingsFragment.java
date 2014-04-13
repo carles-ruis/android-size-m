@@ -21,7 +21,8 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
         addPreferencesFromResource(R.xml.preferences);
 
         /*- I have to set summary for the ListPreference explicity , PreferenceFragment doesn't set it by itself */
-        String summary = ((BaseActivity) getActivity()).getApp().getUnitsSelected();
+        String unitsSelectedConstant = ((BaseActivity) getActivity()).getApp().getUnitsSelectedConstant();
+        String summary = PrefHelper.getUnitsSelectedPreferenceString(getActivity(), unitsSelectedConstant);
         Preference unitsPreference = findPreference(C.USER_PREF_UNITS);
         unitsPreference.setSummary(summary);
 
@@ -41,7 +42,7 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        Preference preferenceChanged;
+        final Preference preferenceChanged;
 
         if (key.equals(C.USER_PREF_UNITS)) {
             preferenceChanged = findPreference(key);

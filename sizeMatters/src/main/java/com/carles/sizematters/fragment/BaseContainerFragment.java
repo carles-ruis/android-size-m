@@ -1,7 +1,5 @@
 package com.carles.sizematters.fragment;
 
-import java.lang.reflect.Field;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -14,9 +12,9 @@ import com.carles.sizematters.R;
 import com.carles.sizematters.activity.MainActivity;
 import com.carles.sizematters.adapter.GenderPagerAdapter;
 
-public abstract class BaseContainerFragment extends Fragment {
+import java.lang.reflect.Field;
 
-    private boolean isPageSlidingTabStripSwipeable = true;
+public abstract class BaseContainerFragment extends Fragment {
 
     /*- ************************************************************************************************************** */
     /*- ************************************************************************************************************** */

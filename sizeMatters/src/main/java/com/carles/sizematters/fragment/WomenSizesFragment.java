@@ -33,8 +33,6 @@ public class WomenSizesFragment extends Fragment {
     protected int layoutResourceId;
     private String unitsSelectedConstant;
 
-    private View view;
-
     public WomenSizesFragment() {
         this.rawResourceId = R.raw.sizes_women;
         this.layoutResourceId = R.layout.fragment_size_women;
@@ -67,7 +65,7 @@ public class WomenSizesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(layoutResourceId, container, false);
+        final View view = inflater.inflate(layoutResourceId, container, false);
 
         final TextView sizeBust = (TextView) view.findViewById(R.id.item_size_bust);
         final TextView sizeWaist = (TextView) view.findViewById(R.id.item_size_waist);

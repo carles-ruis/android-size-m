@@ -27,8 +27,6 @@ public abstract class BaseSizeCountriesFragment extends Fragment {
 
     protected abstract int getRawResourceId();
 
-    private View view;
-
     public BaseSizeCountriesFragment() {
         super();
         rawResourceId = getRawResourceId();
@@ -49,7 +47,7 @@ public abstract class BaseSizeCountriesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_size_countries, container, false);
+        final View view = inflater.inflate(R.layout.fragment_size_countries, container, false);
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
 

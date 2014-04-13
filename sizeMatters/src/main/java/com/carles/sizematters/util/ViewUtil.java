@@ -7,8 +7,7 @@ public class ViewUtil {
 
     public static int getDps(Context ctx, int resId) {
         Resources res = ctx.getResources();
-        int dp = (int) (res.getDimension(resId) / res.getDisplayMetrics().density);
-        return dp;
+        return (int) (res.getDimension(resId) / res.getDisplayMetrics().density);
     }
 
     /**

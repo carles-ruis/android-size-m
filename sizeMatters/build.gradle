@@ -16,10 +16,10 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-        checkReleaseBuilds false
-    }
+//    lintOptions {
+//        abortOnError false
+//        checkReleaseBuilds false
+//    }
 }
 
 dependencies {

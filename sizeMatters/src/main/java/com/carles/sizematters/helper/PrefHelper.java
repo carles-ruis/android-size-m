@@ -5,9 +5,6 @@ import android.content.Context;
 import com.carles.sizematters.C;
 import com.carles.sizematters.R;
 
-/**
- * Created by Carles on 12/04/14.
- */
 public class PrefHelper {
 
     /**
@@ -18,7 +15,7 @@ public class PrefHelper {
      * @return the unitsSelected value language independent to store in preferences
      */
     public static String getUnitsSelectedPreferenceConstant(Context context, String unitsSelected) {
-        String ret = null;
+        String ret;
         if (context.getString(R.string.settings_units_inches).equals(unitsSelected)) {
             ret = C.USER_PREF_UNITS_INCHES;
         } else {
@@ -32,10 +29,10 @@ public class PrefHelper {
      *
      * @param context
      * @param unitsSelectedConstant
-     * @return
+     * @return units selected localized value
      */
     public static String getUnitsSelectedPreferenceString(Context context, String unitsSelectedConstant) {
-        String ret = null;
+        String ret;
         if (C.USER_PREF_UNITS_INCHES.equals(unitsSelectedConstant)) {
             ret = context.getString(R.string.settings_units_inches);
         } else {

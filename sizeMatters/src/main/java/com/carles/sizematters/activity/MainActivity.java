@@ -242,23 +242,20 @@ public class MainActivity extends BaseActivity {
                     break;
             }
 
-            if (fragment != null) {
-
-                selectedOption = option;
+            selectedOption = option;
 
                 /*- Insert the fragment by replacing any existing fragment */
-                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
 
                 /*- Highlight the selected item, update the title ... and close the drawer */
-                drawerList.setItemChecked(position, true);
-                getSupportActionBar().setTitle(getString(selectedOption.titleId));
+            drawerList.setItemChecked(position, true);
+            getSupportActionBar().setTitle(getString(selectedOption.titleId));
                 /*- recreate the action bar by calling onCreateOptionsMenu */
-                supportInvalidateOptionsMenu();
+            supportInvalidateOptionsMenu();
 
                 /*- store new selection in preferences to retrieve it in next app execution */
-                getApp().setDrawerOptionSelected(position);
+            getApp().setDrawerOptionSelected(position);
 
-            }
         }
 
         drawerLayout.closeDrawer(drawerList);
