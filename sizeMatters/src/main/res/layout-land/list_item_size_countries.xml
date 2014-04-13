@@ -1,48 +1,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_margin" />
 
     <TextView
         android:id="@+id/item_size"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/list_item"
-        android:textSize="@dimen/list_item" />
+        style="@style/text_size_by_countries_item_landscape" />
 
     <TextView
         android:id="@+id/item_size_eu"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/list_item"
-        android:textSize="@dimen/list_item" />
+        style="@style/text_size_by_countries_item_landscape" />
 
     <TextView
         android:id="@+id/item_size_us"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/list_item"
-        android:textSize="@dimen/list_item" />
+        style="@style/text_size_by_countries_item_landscape" />
 
     <TextView
         android:id="@+id/item_size_uk"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/list_item"
-        android:textSize="@dimen/list_item"
+        style="@style/text_size_by_countries_item_landscape"
         android:visibility="gone" />
 
     <TextView
         android:id="@+id/item_size_jp"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/list_item"
-        android:textSize="@dimen/list_item"
+        style="@style/text_size_by_countries_item_landscape"
         android:visibility="gone" />
 
 </LinearLayout>

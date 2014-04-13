@@ -36,17 +36,17 @@
     <string name="user_pref_show_size_jp">user_pref_show_size_jp</string>
     <string name="user_pref_units">user_pref_units</string>
 
-    <string-array name="user_pref_units_entries">
-        <item>@string/settings_units_cms</item>
-        <item>@string/settings_units_inches</item>
-    </string-array>
-
     <!-- Settings options -->
     <string name="settings_units">Unit of measure</string>
 
     <string-array name="settings_units_entries">
-        <item>@string/settings_units_cms</item>
-        <item>@string/settings_units_inches</item>
+        <item name="cms">@string/settings_units_cms</item>
+        <item name="inches">@string/settings_units_inches</item>
+    </string-array>
+
+    <string-array name="user_pref_units_values">
+        <item name="cms">@string/settings_units_cms</item>
+        <item name="inches">@string/settings_units_inches</item>
     </string-array>
 
     <string name="settings_units_cms">Centimeters</string>
@@ -56,13 +56,13 @@
 
     <!-- Help texts -->
     <string name="help_abbreviatures">EU\nUS\nUK\nJP</string>
-    <string name="help_countries">Europe\nUSA &amp; Canada\nJapan</string>
+    <string name="help_countries">Europe\nUSA &amp; Canada\nUnited Kingdom\nJapan</string>
     <string name="help_shoes">Size conversion for Men\'s &amp; Women\'s Shoes</string>
     <string name="help_shirts">Size conversion for Shirts and Women\'s Blouses</string>
     <string name="help_dresses">Size conversion for Women\'s Dresses, Jackets, Suits, Coats</string>
     <string name="help_jackets">Size conversion for Men\'s Jackets, Suits, Coats, Sweaters</string>
     <string name="help_trousers">Size conversion for Trousers</string>
-    <string name="help_by_gender">Women\'s &amp; Men\'s Size Standards in cms or inches:\nMen: Neck, chest, sleeve and waist measurements\nWomen: Bust, waist and hip measurements</string>
+    <string name="help_by_gender">Size Standards in cms or inches:\nMen: Neck, chest, sleeve and waist measurements\nWomen: Bust, waist and hip measurements</string>
     <string name="help_note">*Note that there is no real international standard for clothes sizing</string>
 
     <!-- WomenSizes and MenSizesFragment footer -->

@@ -27,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:theme="@style/Theme.Sm.Preference"
             android:name=".activity.SettingsActivity"
             android:label="@string/title_settings" />
     </application>

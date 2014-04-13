@@ -86,9 +86,20 @@ public class SizeMattersApp extends Application {
         } else if (value instanceof Integer) {
             editor.putInt(key, (Integer) value);
             editor.commit();
+        } else if (value instanceof String) {
+            editor.putString(key, (String)value);
+            editor.commit();
         } else {
             PrefUtil.put(prefs, key, value);
         }
+    }
+
+    public String getUnitsSelectedConstant() {
+        return prefs.getString(C.USER_PREF_UNITS_CONSTANT, C.USER_PREF_UNITS_CMS);
+    }
+
+    public void setUnitsSelectedConstant(String unitsSelectedConstant) {
+        putPreference(C.USER_PREF_UNITS_CONSTANT, unitsSelectedConstant);
     }
 
 }

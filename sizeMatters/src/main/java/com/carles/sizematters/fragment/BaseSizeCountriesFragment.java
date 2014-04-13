@@ -7,8 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -60,7 +58,7 @@ public abstract class BaseSizeCountriesFragment extends Fragment {
 
         } else {
 
-            LinearLayout horizontalContainer = (LinearLayout) view.findViewById(R.id.horizontal_container);
+            ViewGroup horizontalContainer = (ViewGroup) view.findViewById(R.id.horizontal_container);
 
             View column;
             TextView size;
@@ -92,7 +90,6 @@ public abstract class BaseSizeCountriesFragment extends Fragment {
                 }
 
                 horizontalContainer.addView(column);
-                horizontalContainer.addView(getDivider());
 
             }
 
@@ -111,20 +108,6 @@ public abstract class BaseSizeCountriesFragment extends Fragment {
         } catch (IOException e) {
             // TODO report error
         }
-    }
-
-    private View getDivider() {
-        View ret = new View(getActivity());
-        LinearLayout.LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT, 1);
-        ret.setLayoutParams(lp);
-
-        if (android.os.Build.VERSION.SDK_INT >= 16) {
-            ret.setBackground(getResources().getDrawable(R.color.list_divider));
-        } else {
-            ret.setBackgroundDrawable(getResources().getDrawable(R.color.list_divider));
-        }
-
-        return ret;
     }
 
     private MainActivity activity() {

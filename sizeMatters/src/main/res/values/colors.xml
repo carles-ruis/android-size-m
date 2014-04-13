@@ -35,14 +35,12 @@
     <color name="drawer_item">@color/lighter_green</color>
 
     <!-- sliding tabs -->
-<!--     <color name="tab_background">@color/almost_white</color> -->
     <color name="tab_background">@color/almost_white</color>
     <color name="tab_indicator">@color/light_green</color>
     <color name="tab_underlined">@color/light_green</color>
 
     <!-- fragment contents -->
-<!--     <color name="list_divider">@color/grey</color> -->
-    <color name="list_divider">@color/grey</color>
+    <color name="divider">@color/grey</color>
     <color name="list_item">@color/almost_black</color>
     <color name="size_by_gender_text">@color/almost_black</color>
     <color name="size_by_gender_textbox">@color/green</color>
@@ -54,5 +52,8 @@
     <color name="help_divider">@color/light_green</color>
     <color name="help_message">@color/almost_black</color>
     <color name="help_note">@color/dark_grey</color>
+
+    <!-- default preferences style override -->
+    <color name="preferences_summary">@color/dark_green</color>
 
 </resources>

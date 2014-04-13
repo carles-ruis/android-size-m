@@ -163,6 +163,7 @@ public class MainActivity extends BaseActivity {
                 Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
                 finish();
+                overridePendingTransition(R.anim.slide_activity_to_left_in, R.anim.slide_activity_to_left_out);
                 break;
 
             case R.id.action_spinner:

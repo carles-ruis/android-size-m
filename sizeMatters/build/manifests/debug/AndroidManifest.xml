@@ -14,7 +14,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/title_settings" android:name="com.carles.sizematters.activity.SettingsActivity"/>
+        <activity android:label="@string/title_settings" android:name="com.carles.sizematters.activity.SettingsActivity" android:theme="@style/Theme.Sm.Preference"/>
     </application>
 
 </manifest>

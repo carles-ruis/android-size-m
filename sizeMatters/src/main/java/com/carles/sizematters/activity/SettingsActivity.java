@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.MenuItem;
 
+import com.carles.sizematters.R;
 import com.carles.sizematters.fragment.SettingsFragment;
 
 public class SettingsActivity extends BaseActivity {
@@ -31,6 +32,7 @@ public class SettingsActivity extends BaseActivity {
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 finish();
+                overridePendingTransition(R.anim.slide_activity_to_right_in, R.anim.slide_activity_to_right_out);
                 return true;
         }
         return super.onOptionsItemSelected(item);

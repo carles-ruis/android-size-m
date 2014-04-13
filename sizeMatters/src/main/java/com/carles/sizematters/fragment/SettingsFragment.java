@@ -9,6 +9,7 @@ import android.support.v4.preference.PreferenceFragment;
 import com.carles.sizematters.C;
 import com.carles.sizematters.R;
 import com.carles.sizematters.activity.BaseActivity;
+import com.carles.sizematters.helper.PrefHelper;
 
 public class SettingsFragment extends PreferenceFragment implements OnSharedPreferenceChangeListener {
 
@@ -44,8 +45,14 @@ public class SettingsFragment extends PreferenceFragment implements OnSharedPref
 
         if (key.equals(C.USER_PREF_UNITS)) {
             preferenceChanged = findPreference(key);
+
             /*- Set summary to be the user-description for the selected value */
-            preferenceChanged.setSummary(sharedPreferences.getString(key, ""));
+            String unitsSelected = sharedPreferences.getString(key, getString(R.string.settings_units_cms));
+            preferenceChanged.setSummary(unitsSelected);
+
+            /*- Set units selected preference language independent */
+            String unitsSelectedConstant = PrefHelper.getUnitsSelectedPreferenceConstant(getActivity(), unitsSelected);
+            ((BaseActivity) getActivity()).getApp().setUnitsSelectedConstant(unitsSelectedConstant);
         }
     }
 

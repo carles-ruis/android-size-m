@@ -15,4 +15,6 @@
         <attr name="pstsTextAllCaps" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="DividerView" />
+
 </resources>

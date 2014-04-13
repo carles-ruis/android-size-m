@@ -4,7 +4,7 @@ public class C {
 
     /*- Logging */
     public static final boolean DEBUG = true;
-    // public static final String LOG_TAG = "SizeMattersApp";
+    public static final String LOG_TAG = "SizeMattersApp";
 
     /*- Preferences files */
     // public static final String USER_PREF_FILE = "user_prefs";
@@ -16,10 +16,13 @@ public class C {
     public static final String USER_PREF_SHOW_SIZES_UK = "pref_show_size_uk";
     public static final String USER_PREF_SHOW_SIZES_JP = "pref_show_size_jp";
     public static final String USER_PREF_UNITS = "pref_units";
+    public static final String USER_PREF_UNITS_CONSTANT = "pref_units_constant";
 
     /*- Preference possible values */
     public static final int PREF_NOT_EXISTS = -1;
     public static final String PREF_NOT_EXIST$ = "pref_not_exists";
+    public static final String USER_PREF_UNITS_CMS = "pref_units_cms";
+    public static final String USER_PREF_UNITS_INCHES = "pref_units_inches";
 
     /*- Bundle args */
     public static final String PARAM_INITIAL_TAB = "param_initial_tab";

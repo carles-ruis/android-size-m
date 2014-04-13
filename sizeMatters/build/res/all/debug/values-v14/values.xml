@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/res/values-v14/styles_sm.xml -->
+    <!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/res/values-v14/styles.xml -->
     <eat-comment />
 
     <style name="ActionBar.Solid.Sm" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
@@ -172,12 +172,17 @@
         <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
         <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
     </style>
-    <!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/res/values-v14/styles_sm.xml -->
+    <!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/res/values-v14/styles.xml -->
     <eat-comment />
 
     <style name="Theme.Sm" parent="@style/Theme.AppCompat.Light">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_sm</item>
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Sm</item>
+
+        <!-- workaround to avoid that the tiled background disappear when the screen scrolls -->
+        <item name="android:windowBackground">@drawable/main_background</item>
+        <item name="android:listViewStyle">@style/TransparentListView</item>
+        <item name="android:expandableListViewStyle">@style/TransparentExpandableListView</item>
     </style>
     <!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/build/exploded-bundles/ComAndroidSupportAppcompatV71910.aar/res/values-v14/values.xml -->
     <eat-comment />

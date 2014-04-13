@@ -1,15 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/main_background">
-
-    <Spinner
-        android:id="@+id/spinner_sizes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/body_image"
-        android:layout_margin="@dimen/common_margin" />
-    <!--android:layout_toLeftOf="@+id/body_image"/>-->
+    android:layout_height="match_parent">
 
     <FrameLayout
         android:id="@+id/body_image"
@@ -30,31 +21,19 @@
 
             <TextView
                 android:id="@+id/item_size_bust"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_size_by_gender"
                 android:layout_above="@id/item_size_waist"
                 android:layout_alignParentRight="true"
                 android:layout_marginBottom="@dimen/size_by_gender_bust_waist_separation"
-                android:layout_marginRight="@dimen/size_by_gender_text_women_margin"
-                android:background="@color/size_by_gender_textbox"
-                android:padding="@dimen/size_by_gender_text_padding"
-                android:textColor="@color/size_by_gender_text"
-                android:textSize="@dimen/size_by_gender_text"
-                android:textStyle="bold" />
+                android:layout_marginRight="@dimen/size_by_gender_text_women_margin" />
 
             <TextView
                 android:id="@+id/item_size_waist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_size_by_gender"
                 android:layout_above="@+id/anchor"
                 android:layout_alignParentRight="true"
                 android:layout_marginBottom="@dimen/size_by_gender_women_waist_offset"
-                android:layout_marginRight="@dimen/size_by_gender_text_women_margin"
-                android:background="@color/size_by_gender_textbox"
-                android:padding="@dimen/size_by_gender_text_padding"
-                android:textColor="@color/size_by_gender_text"
-                android:textSize="@dimen/size_by_gender_text"
-                android:textStyle="bold" />
+                android:layout_marginRight="@dimen/size_by_gender_text_women_margin" />
 
             <View
                 android:id="@+id/anchor"
@@ -64,30 +43,18 @@
 
             <TextView
                 android:id="@+id/item_size_hip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/text_size_by_gender"
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/anchor"
                 android:layout_marginRight="@dimen/size_by_gender_text_women_margin"
-                android:layout_marginTop="@dimen/size_by_gender_hip_offset"
-                android:background="@color/size_by_gender_textbox"
-                android:padding="@dimen/size_by_gender_text_padding"
-                android:textColor="@color/size_by_gender_text"
-                android:textSize="@dimen/size_by_gender_text"
-                android:textStyle="bold" />
-
+                android:layout_marginTop="@dimen/size_by_gender_hip_offset" />
         </RelativeLayout>
     </FrameLayout>
 
+    <include layout="@layout/view_spinner_sizes" />
+
     <TextView
         android:id="@+id/item_footer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="@dimen/common_margin"
-        android:text="@string/footer_units_of_measure"
-        android:textColor="@color/size_by_gender_footer"
-        android:textSize="@dimen/size_by_gender_footer" />
+        style="@style/text_size_by_gender_footer" />
 
 </RelativeLayout>

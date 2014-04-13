@@ -4,31 +4,36 @@
     <!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/sizeMatters/src/main/res/values-mdpi/dimens.xml -->
     <eat-comment />
 
-    <dimen name="common_margin">5dp</dimen>
-    <dimen name="common_padding">5dp</dimen>
-    <dimen name="drawer_item">20sp</dimen>
-    <dimen name="drawer_item_padding">10dp</dimen>
+    <dimen name="common_margin">4dp</dimen>
+    <dimen name="common_padding">4dp</dimen>
+    <dimen name="divider_height">2dp</dimen>
+    <dimen name="drawer_divider">2dp</dimen>
+    <dimen name="drawer_item">18sp</dimen>
+    <dimen name="drawer_item_padding">4dp</dimen>
     <dimen name="help_countries_offset">10dp</dimen>
-    <dimen name="help_dialog_padding">5dp</dimen>
+    <dimen name="help_dialog_padding">4dp</dimen>
     <dimen name="help_message">14sp</dimen>
     <dimen name="help_note">12sp</dimen>
-    <dimen name="help_title">20sp</dimen>
+    <dimen name="help_title">18sp</dimen>
+    <dimen name="item_size_countries_landscape_width">50dp</dimen>
     <dimen name="list_item">14sp</dimen>
-    <dimen name="size_by_gender_bust_waist_separation">5dp</dimen>
+    <dimen name="size_by_gender_bust_waist_separation">4dp</dimen>
     <dimen name="size_by_gender_chest_waist_separation">2dp</dimen>
     <dimen name="size_by_gender_footer">14sp</dimen>
-    <dimen name="size_by_gender_hip_offset">5dp</dimen>
+    <dimen name="size_by_gender_hip_offset">4dp</dimen>
     <dimen name="size_by_gender_men_waist_offset">0dp</dimen>
-    <dimen name="size_by_gender_neck_chest_separation">5dp</dimen>
-    <dimen name="size_by_gender_neck_margin">25dp</dimen>
-    <dimen name="size_by_gender_sleeve_margin">5dp</dimen>
-    <dimen name="size_by_gender_sleeve_offset">15dp</dimen>
+    <dimen name="size_by_gender_neck_chest_separation">4dp</dimen>
+    <dimen name="size_by_gender_neck_margin">24dp</dimen>
+    <dimen name="size_by_gender_sleeve_margin">4dp</dimen>
+    <dimen name="size_by_gender_sleeve_offset">14dp</dimen>
     <dimen name="size_by_gender_text">14sp</dimen>
     <dimen name="size_by_gender_text_men_margin">10dp</dimen>
     <dimen name="size_by_gender_text_padding">2dp</dimen>
-    <dimen name="size_by_gender_text_women_margin">15dp</dimen>
+    <dimen name="size_by_gender_text_women_margin">14dp</dimen>
     <dimen name="size_by_gender_women_waist_offset">0dp</dimen>
-    <dimen name="size_countries_divider_margin">15dp</dimen>
-    <dimen name="size_countries_top_margin">10dp</dimen>
+    <dimen name="size_countries_divider_margin">14dp</dimen>
+    <dimen name="size_countries_landscape_left_margin">14dp</dimen>
+    <dimen name="size_countries_top_margin">14dp</dimen>
+    <dimen name="view_margin_height">24dp</dimen>
 
 </resources>

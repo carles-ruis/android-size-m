@@ -1,20 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+    <!-- themes -->
+
+    <style name="Theme.Sm" parent="@style/Theme.AppCompat.Light">
+
+        <!-- Support library compatibility -->
+        <item name="actionBarItemBackground">@drawable/selectable_background_sm</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Sm</item>
+
+        <!-- workaround to avoid that the tiled background disappear when the screen scrolls -->
+        <item name="android:windowBackground">@drawable/main_background</item>
+        <item name="android:listViewStyle">@style/TransparentListView</item>
+        <item name="android:expandableListViewStyle">@style/TransparentExpandableListView</item>
     </style>
 
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="ActionBar.Solid.Sm" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/ab_solid_sm</item>
     </style>
 
+    <style name="TransparentListView" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="TransparentExpandableListView" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Sm.Preference" parent="@style/Theme.Sm">
+        <item name="android:textColorSecondary">@color/preferences_summary</item>
+    </style>
+
+    <!-- styles -->
+
+    <style name="text_size_by_gender">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/size_by_gender_textbox</item>
+        <item name="android:padding">@dimen/size_by_gender_text_padding</item>
+        <item name="android:textColor">@color/size_by_gender_text</item>
+        <item name="android:textSize">@dimen/size_by_gender_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_size_by_gender_footer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/common_margin</item>
+        <item name="android:text">@string/footer_units_of_measure</item>
+        <item name="android:textColor">@color/size_by_gender_footer</item>
+        <item name="android:textSize">@dimen/size_by_gender_footer</item>
+    </style>
+
+    <style name="text_size_by_countries_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/list_item</item>
+        <item name="android:textSize">@dimen/list_item</item>
+    </style>
+
+    <style name="text_size_by_countries_item_landscape">
+        <item name="android:layout_width">@dimen/item_size_countries_landscape_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/list_item</item>
+        <item name="android:textSize">@dimen/list_item</item>
+    </style>
 </resources>

@@ -14,9 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.carles.sizematters.C;
 import com.carles.sizematters.R;
 import com.carles.sizematters.activity.MainActivity;
 import com.carles.sizematters.helper.FileHelper;
+import com.carles.sizematters.helper.PrefHelper;
 import com.carles.sizematters.model.MenSizesConversion;
 
 import java.io.InputStream;
@@ -29,7 +31,7 @@ public class MenSizesFragment extends Fragment {
     protected Map<String, MenSizesConversion> sizes;
     protected int rawResourceId;
     protected int layoutResourceId;
-    private String unitsSelected;
+    private String unitsSelectedConstant;
 
     private View view;
 
@@ -47,8 +49,8 @@ public class MenSizesFragment extends Fragment {
 
         InputStream is = getResources().openRawResource(rawResourceId);
 
-        unitsSelected = ((MainActivity) activity).getApp().getUnitsSelected();
-        boolean showInInches = getString(R.string.settings_units_inches).equals(unitsSelected);
+        unitsSelectedConstant = ((MainActivity) activity).getApp().getUnitsSelectedConstant();
+        boolean showInInches = C.USER_PREF_UNITS_INCHES.equals(unitsSelectedConstant);
 
         sizes = FileHelper.readMenSizeConversionResource(is, showInInches);
 
@@ -94,6 +96,7 @@ public class MenSizesFragment extends Fragment {
         });
 
         final TextView footer = (TextView) view.findViewById(R.id.item_footer);
+        String unitsSelected = PrefHelper.getUnitsSelectedPreferenceString(getActivity(), unitsSelectedConstant);
         footer.setText(getString(R.string.footer_units_of_measure, unitsSelected));
 
         return view;
