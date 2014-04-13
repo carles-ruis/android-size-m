@@ -34,16 +34,21 @@ public class HelpDialogFragment extends DialogFragment {
         String title = getString(getArguments().getInt(ARG_TITLE_ID));
         String message = getString(getArguments().getInt(ARG_MESSAGE_ID));
 
-        // Use the Builder class for convenient dialog construction
+        /*- Use the Builder class for convenient dialog construction */
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        /*- Next line doesn't work for api<11 */
+//        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.Theme_Sm_HelpDialog);
 
         final LayoutInflater inflater = getActivity().getLayoutInflater();
         final View view = inflater.inflate(R.layout.dialog_help, null);
+        ((TextView) view.findViewById(R.id.help_title)).setText(title);
+        ((TextView) view.findViewById(R.id.help_message)).setText(message);
+
         builder.setView(view);
 
         final Dialog alert = builder.create();
 
-        /*- findViewById from the root view of the inflated hierarchy */
+        /*- Dismiss the dialog if the user touches in it */
         view.findViewById(R.id.help_content).setOnClickListener(new View.OnClickListener() {
             @Override
             /*- touching inside the dialog dismisses it too */
@@ -51,11 +56,11 @@ public class HelpDialogFragment extends DialogFragment {
                 dismiss();
             }
         });
-
-        ((TextView) view.findViewById(R.id.help_title)).setText(title);
-        ((TextView) view.findViewById(R.id.help_message)).setText(message);
-
+        /*- Dismiss the dialog if the user touches outside it */
         alert.setCanceledOnTouchOutside(true);
+
+        /*- Workaround to make animation work in api<11 */
+        alert.getWindow().getAttributes().windowAnimations = R.style.Theme_Sm_HelpDialog;
 
         return alert;
     }

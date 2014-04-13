@@ -4,7 +4,7 @@
 
     <!-- margin and padding -->
     <dimen name="size_by_gender_text_men_margin">4dp</dimen>
-    <dimen name="size_by_gender_chest_waist_separation">4dp</dimen>
+    <dimen name="size_by_gender_chest_waist_separation">8dp</dimen>
 
     <!-- element sizes: width and height -->
 

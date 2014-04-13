@@ -38,4 +38,6 @@ public class C {
     public static final String RANGE_SEPARATOR = "-";
     public static final String UNKNOWN_VALUE = "?";
 
+    /*- Tags for identify fragments */
+    public static final String TAG_HELP_DIALOG = "helpDialog";
 }

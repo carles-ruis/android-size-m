@@ -188,8 +188,14 @@ public class MainActivity extends BaseActivity {
         int helpMessageId = selectedOption.helpMessageId;
 
         HelpDialogFragment help = HelpDialogFragment.newInstance(titleId, helpMessageId);
+
+        /*- Doesn't work. As HelpDialogFragment extends DialogFragment, we have to set a theme to animate it */
+        //        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        //        ft.setCustomAnimations(R.anim.zoom_in, FragmentTransaction.TRANSIT_NONE);
+
         /*- DialogFragment.show() starts a transaction that adds the Dialog on top of the current shown activity */
-        help.show(getSupportFragmentManager(), "helpDialog");
+        help.show(getSupportFragmentManager(), C.TAG_HELP_DIALOG);
+
     }
 
     @Override

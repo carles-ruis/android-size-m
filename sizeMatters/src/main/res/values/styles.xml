@@ -29,10 +29,17 @@
         <item name="android:cacheColorHint">@android:color/transparent</item>
     </style>
 
+    <!-- Theme to change the summary preferences color because it was too similar to background color -->
     <style name="Theme.Sm.Preference" parent="@style/Theme.Sm">
         <item name="android:textColorSecondary">@color/preferences_summary</item>
     </style>
 
+    <!-- As HelpDialog extends DialogFragment, we have to set a theme to set an animation for it -->
+    <style name="Theme.Sm.HelpDialog" parent="@style/Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+        
     <!-- styles -->
 
     <style name="text_size_by_gender">
