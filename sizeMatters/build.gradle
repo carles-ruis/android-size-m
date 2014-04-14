@@ -1,5 +1,6 @@
 apply plugin: 'android'
 
+
 android {
     compileSdkVersion 19
     buildToolsVersion "19.0.1"
@@ -11,8 +12,10 @@ android {
 
     buildTypes {
         release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            runProguard true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+            proguardFiles getDefaultProguardFile('proguard-bugsense.txt')
         }
     }
 
@@ -21,7 +24,6 @@ android {
 //        checkReleaseBuilds false
 //    }
 }
-
 dependencies {
     compile project(':androidsupportv4preferencefragmentmaster')
     compile 'com.android.support:support-v4:+'

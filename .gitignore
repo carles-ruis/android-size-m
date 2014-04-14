@@ -5,6 +5,7 @@
 .DS_Store
 
 # added files
+/extras
 import-summary.txt
 *.apk
 *.ap_

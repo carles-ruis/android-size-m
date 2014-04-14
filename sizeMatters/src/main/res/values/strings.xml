@@ -29,13 +29,6 @@
     <string name="tab_men">Men</string>
     <string name="tab_women">Women</string>
 
-    <!-- Preferences keys -->
-    <string name="app_pref_last_screen_seen">app_pref_last_screen_seen</string>
-    <string name="app_pref_last_gender_seen">app_pref_last_gender_seen</string>
-    <string name="user_pref_show_size_uk">user_pref_show_size_uk</string>
-    <string name="user_pref_show_size_jp">user_pref_show_size_jp</string>
-    <string name="user_pref_units">user_pref_units</string>
-
     <!-- Settings options -->
     <string name="settings_units">Unit of measure</string>
 
