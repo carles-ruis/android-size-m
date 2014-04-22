@@ -1,0 +1,15 @@
+- reduir el apk passant el proguard be
+- reduit el apk eliminant la llibreria gson
+- reduir el apk copiant els sources de la llibreria de suport del preference fragment sense haver de compilar projecte apart
+- reduir la mida de les imatges amb tinypng
+- eliminar el codi no utilitzat
+
+- afegir talles per ger, ita, fra		car
+- afegir jp i uk per defecte			bar
+- afegir talles de "bra"				son
+- afegir talles de nen					yai
+- back desde la main obre el drawer     yai
+- eliminar interrogant si no hi ha help	ger
+- afegir titol en castella i catala		ger
+
+- millorar el SEO, escollir les paraules en el titol i la descripcio, conten les 150 primeres paraules
