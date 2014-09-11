@@ -23,15 +23,12 @@ public class GenderPagerAdapter extends FragmentPagerAdapter {
         super(fm);
         this.context = context;
     }
-
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
-
     @Override
     public int getCount() {
         return 2;
     }
 
+    @Override
     public Fragment getItem(int position) {
         Fragment fragment = null;
 
@@ -61,6 +58,7 @@ public class GenderPagerAdapter extends FragmentPagerAdapter {
         return fragment;
     }
 
+    @Override
     public CharSequence getPageTitle(int position) {
         if (position == C.TAB_MEN_POSITION) {
             return context.getString(R.string.tab_men);

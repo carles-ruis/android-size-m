@@ -28,9 +28,6 @@ public class CustomizableSwipeViewPager extends ViewPager {
         enableSwipe = getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
     }
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
-
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         if (this.enableSwipe) {

@@ -19,6 +19,7 @@ public class SizeCountriesAdapter extends ArrayAdapter<SizeCountriesConversion> 
     private boolean showSizesUk;
     private boolean showSizesJp;
 
+    /*- holder can be static because don't access to the private members of SizeCountriesAdapter. This way it's no coupled and can be accessed from outside the parent class */
     static class Holder {
         public TextView size;
         public TextView sizeEu;

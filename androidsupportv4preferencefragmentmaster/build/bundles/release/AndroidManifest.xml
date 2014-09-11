@@ -11,6 +11,6 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
---><!-- From: file:/C:/Users/Carles/AndroidStudioProjects/SizeMatters/androidsupportv4preferencefragmentmaster/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="android.support.v4.preferencefragment">
+--><!-- From: file:/C:/android-size-m/androidsupportv4preferencefragmentmaster/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="android.support.v4.preferencefragment">
     <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="4"/>
 </manifest>

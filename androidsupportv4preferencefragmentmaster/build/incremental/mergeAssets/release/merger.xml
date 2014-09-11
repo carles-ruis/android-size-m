@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="C:\Users\Carles\AndroidStudioProjects\SizeMatters\androidsupportv4preferencefragmentmaster\src\main\assets" />
+        <source path="C:\android-size-m\androidsupportv4preferencefragmentmaster\src\main\assets" />
     </dataSet>
     <dataSet config="release" >
-        <source path="C:\Users\Carles\AndroidStudioProjects\SizeMatters\androidsupportv4preferencefragmentmaster\src\release\assets" />
+        <source path="C:\android-size-m\androidsupportv4preferencefragmentmaster\src\release\assets" />
     </dataSet>
 
 </merger>

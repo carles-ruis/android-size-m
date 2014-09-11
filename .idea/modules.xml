@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SizeMatters.iml" filepath="$PROJECT_DIR$/SizeMatters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-size-m.iml" filepath="$PROJECT_DIR$/android-size-m.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidsupportv4preferencefragmentmaster/androidsupportv4preferencefragmentmaster.iml" filepath="$PROJECT_DIR$/androidsupportv4preferencefragmentmaster/androidsupportv4preferencefragmentmaster.iml" />
       <module fileurl="file://$PROJECT_DIR$/sizeMatters/sizeMatters.iml" filepath="$PROJECT_DIR$/sizeMatters/sizeMatters.iml" />
     </modules>

@@ -32,8 +32,8 @@ public class MainActivity extends BaseActivity {
     private ActionBarDrawerToggle drawerToggle;
     private DrawerOption selectedOption = null;
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
+    /*- ************************************************************************ */
+    /*- ************************************************************************ */
     private class ThisActionBarDrawerToggle extends ActionBarDrawerToggle {
         public ThisActionBarDrawerToggle(Activity activity, DrawerLayout drawerLayout, int drawerImageRes, int openDrawerContentDescRes, int closeDrawerContentDescRes) {
             super(activity, drawerLayout, drawerImageRes, openDrawerContentDescRes, closeDrawerContentDescRes);
@@ -63,8 +63,8 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
+    /*- ************************************************************************ */
+    /*- ************************************************************************ */
     private class ThisDrawerItemClickListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -73,10 +73,10 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
+    /*- ************************************************************************ */
+    /*- *********************************************************************** */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)         {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
@@ -262,8 +262,6 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
     public DrawerOption getSelectedOption() {
         return selectedOption;
     }

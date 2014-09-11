@@ -34,17 +34,10 @@ public abstract class BaseSizeCountriesFragment extends Fragment {
         rawResourceId = getRawResourceId();
     }
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
-
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-
         loadSizeConversionsByCountry();
-
-        /*- store parent activity as listener if needed*/
-        /*- ... */
     }
 
     @Override

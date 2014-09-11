@@ -1,20 +1,22 @@
 apply plugin: 'android-library'
 
 android {
-    compileSdkVersion 8
-    buildToolsVersion "19.0.1"
+    compileSdkVersion 10
+    buildToolsVersion '19.1.0'
 
     defaultConfig {
         minSdkVersion 4
         targetSdkVersion 4
     }
 
-    release {
-        runProguard false
-        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
     }
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:+'
+    compile 'com.android.support:support-v4:19.+'
 }
