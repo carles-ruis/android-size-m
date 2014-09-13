@@ -16,8 +16,6 @@ public class SizeMattersApp extends Application {
     /*- All activities share data through the SharedPreferences object which is accessed from the SizeMatterApp singleton */
     private SharedPreferences prefs;
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
     @Override
     public void onCreate() {
         super.onCreate();

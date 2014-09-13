@@ -38,9 +38,6 @@ public class MenSizesFragment extends Fragment {
         this.layoutResourceId = R.layout.fragment_size_men;
     }
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
-
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);

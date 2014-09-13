@@ -15,9 +15,6 @@ public class HelpDialogFragment extends DialogFragment {
     private static final String ARG_TITLE_ID = "titleId";
     private static final String ARG_MESSAGE_ID = "messageId";
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
-
     public static HelpDialogFragment newInstance(int titleId, int messageId) {
         HelpDialogFragment ret = new HelpDialogFragment();
 

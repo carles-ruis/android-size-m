@@ -1,7 +1,5 @@
 package com.carles.sizematters.adapter;
 
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +10,8 @@ import android.widget.TextView;
 import com.carles.sizematters.R;
 import com.carles.sizematters.activity.BaseActivity;
 import com.carles.sizematters.model.SizeCountriesConversion;
+
+import java.util.List;
 
 public class SizeCountriesAdapter extends ArrayAdapter<SizeCountriesConversion> {
 
@@ -28,8 +28,8 @@ public class SizeCountriesAdapter extends ArrayAdapter<SizeCountriesConversion> 
         public TextView sizeJp;
     }
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
+    /*- ******************************************************************* */
+    /*- ******************************************************************* */
 
     public SizeCountriesAdapter(Context context, List<SizeCountriesConversion> sizes) {
         super(context, R.layout.list_item_size_countries, sizes);

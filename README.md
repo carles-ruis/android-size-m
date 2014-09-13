@@ -1,6 +1,7 @@
 android-size matters
 ====================
 https://play.google.com/store/apps/details?id=com.carles.sizematters
+====================
 
 Size conversion charts for different countries.
 
@@ -9,3 +10,10 @@ Size conversion charts for different countries.
 - Size standards in cms or inches for men (neck, chest, sleeve and waist measurements) and women (bust, waist and hip measurements)
 
 Note that there is no real international standard for clothes sizing
+
+====================
+- Navigation: Drawer + Support Action Bar + PagerSlidingTabStrip (nested fragments)
+- Custom dialogs
+- Preference Fragment (library)
+- Portrait and landscape layouts
+- Bugsense tracking

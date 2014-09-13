@@ -32,49 +32,6 @@ public class MainActivity extends BaseActivity {
     private ActionBarDrawerToggle drawerToggle;
     private DrawerOption selectedOption = null;
 
-    /*- ************************************************************************ */
-    /*- ************************************************************************ */
-    private class ThisActionBarDrawerToggle extends ActionBarDrawerToggle {
-        public ThisActionBarDrawerToggle(Activity activity, DrawerLayout drawerLayout, int drawerImageRes, int openDrawerContentDescRes, int closeDrawerContentDescRes) {
-            super(activity, drawerLayout, drawerImageRes, openDrawerContentDescRes, closeDrawerContentDescRes);
-        }
-
-        /**
-         * Called when a drawer has settled in a completely closed state.
-         */
-        @Override
-        public void onDrawerClosed(View view) {
-            super.onDrawerClosed(view);
-
-            if (selectedOption != null) {
-                getSupportActionBar().setTitle(getString(selectedOption.titleId));
-            }
-            supportInvalidateOptionsMenu();
-        }
-
-        /**
-         * Called when a drawer has settled in a completely open state.
-         */
-        @Override
-        public void onDrawerOpened(View drawerView) {
-            super.onDrawerOpened(drawerView);
-            getSupportActionBar().setTitle(getTitle());
-            supportInvalidateOptionsMenu();
-        }
-    }
-
-    /*- ************************************************************************ */
-    /*- ************************************************************************ */
-    private class ThisDrawerItemClickListener implements AdapterView.OnItemClickListener {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            selectItem(position);
-        }
-
-    }
-
-    /*- ************************************************************************ */
-    /*- *********************************************************************** */
     @Override
     protected void onCreate(Bundle savedInstanceState)         {
         super.onCreate(savedInstanceState);
@@ -265,4 +222,46 @@ public class MainActivity extends BaseActivity {
     public DrawerOption getSelectedOption() {
         return selectedOption;
     }
+
+    /*- ************************************************************************ */
+    /*- ************************************************************************ */
+    private class ThisActionBarDrawerToggle extends ActionBarDrawerToggle {
+        public ThisActionBarDrawerToggle(Activity activity, DrawerLayout drawerLayout, int drawerImageRes, int openDrawerContentDescRes, int closeDrawerContentDescRes) {
+            super(activity, drawerLayout, drawerImageRes, openDrawerContentDescRes, closeDrawerContentDescRes);
+        }
+
+        /**
+         * Called when a drawer has settled in a completely closed state.
+         */
+        @Override
+        public void onDrawerClosed(View view) {
+            super.onDrawerClosed(view);
+
+            if (selectedOption != null) {
+                getSupportActionBar().setTitle(getString(selectedOption.titleId));
+            }
+            supportInvalidateOptionsMenu();
+        }
+
+        /**
+         * Called when a drawer has settled in a completely open state.
+         */
+        @Override
+        public void onDrawerOpened(View drawerView) {
+            super.onDrawerOpened(drawerView);
+            getSupportActionBar().setTitle(getTitle());
+            supportInvalidateOptionsMenu();
+        }
+    }
+
+    /*- ************************************************************************ */
+    /*- ************************************************************************ */
+    private class ThisDrawerItemClickListener implements AdapterView.OnItemClickListener {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            selectItem(position);
+        }
+
+    }
+
 }

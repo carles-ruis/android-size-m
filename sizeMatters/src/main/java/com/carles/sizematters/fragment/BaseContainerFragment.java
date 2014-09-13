@@ -16,20 +16,6 @@ import java.lang.reflect.Field;
 
 public abstract class BaseContainerFragment extends Fragment {
 
-    /*- ********************************************************************** */
-    /*- ********************************************************************** */
-    private class ThisOnPageChangeListener extends ViewPager.SimpleOnPageChangeListener {
-
-        @Override
-        public void onPageSelected(int position) {
-            super.onPageSelected(position);
-            activity().getApp().setGenderTabSelected(position);
-        }
-    }
-
-    /*- ********************************************************************** */
-    /*- ********************************************************************** */
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_container, container, false);
@@ -68,4 +54,17 @@ public abstract class BaseContainerFragment extends Fragment {
             throw new RuntimeException(e);
         }
     }
+
+    /*- ********************************************************************** */
+    /*- ********************************************************************** */
+    private class ThisOnPageChangeListener extends ViewPager.SimpleOnPageChangeListener {
+
+        @Override
+        public void onPageSelected(int position) {
+            super.onPageSelected(position);
+            activity().getApp().setGenderTabSelected(position);
+        }
+    }
+
+
 }

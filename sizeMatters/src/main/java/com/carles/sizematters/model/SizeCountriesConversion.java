@@ -9,8 +9,6 @@ public class SizeCountriesConversion {
     private String uk;
     private String jp;
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
     public SizeCountriesConversion() {}
 
     public SizeCountriesConversion(String size, String eu, String us, String uk, String jp) {
@@ -22,8 +20,6 @@ public class SizeCountriesConversion {
         this.jp = jp;
     }
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
     public String getSize() {
         return size;
     }

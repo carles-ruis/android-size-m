@@ -6,9 +6,6 @@ public class CalcUtil {
 
     private static final Float CMS_PER_INCH = 2.54f;
 
-    /*- ************************************************************************************************************** */
-    /*- ************************************************************************************************************** */
-
     public static String cmsToInches(String cmsAsString) {
         try {
             float cms = Float.parseFloat(cmsAsString);
